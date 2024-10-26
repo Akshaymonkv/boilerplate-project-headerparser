@@ -24,6 +24,15 @@ app.get('/api/hello', function (req, res) {
   res.json({ greeting: 'hello API' });
 });
 
+//project api for request header parser
+app.get('/api/whoami',(req,res)=>{
+  //console.log(req.ip)
+  //const lang = navigator.language;
+  //console.log(req.headers)
+ // console.log(req.headers['accept-language'])
+  //console.log(req.headers['user-agent'])
+})
+
 // listen for requests :)
 var listener = app.listen(process.env.PORT || 3000, function () {
   console.log('Your app is listening on port ' + listener.address().port);
